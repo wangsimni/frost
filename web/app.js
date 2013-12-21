@@ -28,7 +28,7 @@ if ('development' == app.get('env')) {
 
 // mysql
 var mysql = require('mysql');
-var pool = mysql.createPool(require('persistence'));
+var pool = mysql.createPool(require('./persistence'));
 app.getConnection = function(callback) {
 	pool.getConnection(function(err, conn) {
 		callback(err, conn);
