@@ -31,6 +31,6 @@ var app = {
         return networkState;
     },
 
-    webAppUrl: 'http://doterra.mintrupt.com/',
+    webAppUrl: 'http://app.wangsimni.mintrupt.com/',
     timeout: 2000
 };
