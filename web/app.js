@@ -37,7 +37,7 @@ app.getConnection = function(callback) {
 
 require('./app/controllers')(app);
 
-var host = '0.0.0.0';
+var host = '127.0.0.1';
 
 http.createServer(app).listen(app.get('port'), host, function(){
   console.log('Express server listening on port ' + app.get('port'));
