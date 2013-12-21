@@ -31,6 +31,6 @@ var app = {
         return networkState;
     },
 
-    webAppUrl: 'http://app.wangsimni.mintrupt.com/',
+    webAppUrl: 'http://frost.wangsimni.mintrupt.com/',
     timeout: 2000
 };
