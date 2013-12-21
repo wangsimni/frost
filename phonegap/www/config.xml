@@ -3,15 +3,15 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.mintrupt.doterra"
+        id        = "com.mintrupt.wangsimni.frost"
         version   = "0.1.1">
 
     <name>Frost</name>
 
     <description>Frost rocks!</description>
 
-    <author href="http://frost.wangsimni.mintrupt.com/" email="mintrupt@mintrupt.com">
-        류형욱
+    <author href="http://frost.wangsimni.mintrupt.com/" email="teamwangsimni@gmail.com">
+        팀 왕십리
     </author>
 
     <!--
