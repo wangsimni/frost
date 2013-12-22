@@ -26,9 +26,12 @@ if ('development' == app.get('env')) {
   app.locals.pretty = true;
 }
 
+// config
+var config = require('./config');
+
 // mysql
 var mysql = require('mysql');
-var pool = mysql.createPool(require('./persistence'));
+var pool = mysql.createPool(config.poolConfig);
 app.getConnection = function(callback) {
 	pool.getConnection(function(err, conn) {
 		callback(err, conn);
@@ -37,8 +40,6 @@ app.getConnection = function(callback) {
 
 require('./app/controllers')(app);
 
-var host = '127.0.0.1';
-
-http.createServer(app).listen(app.get('port'), host, function(){
+http.createServer(app).listen(app.get('port'), config.host, function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
