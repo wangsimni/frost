@@ -18,7 +18,7 @@ var app = {
     onDeviceReady: function() {
         var networkState = app.checkConnection();
         if (networkState == Connection.NONE) {
-            navigator.location.alert('이 애플리케이션을 실행하려면 인터넷 연결이 필요합니다.');
+            window.location.replace('connection.html');
         } else {
             setTimeout(function() {
                 window.location.replace(app.webAppUrl);
