@@ -1,0 +1,14 @@
+ion-view(title="'" + title + "'")
+  ion-content(has-header='true', padding='true')
+    .card
+      .item.item-text-wrap
+        | Team Wangsimni에서 제공하는 왕십리 음식점 선택 서비스입니다.
+    .card
+      .item.item-text-wrap
+        | 1인 예상 가격 10,000원을 기준으로 원하는 가격대를 선택하세요. 버튼을 누르세요. 나머지는 저희가 해결해 드립니다.
+    a.button.button-block.button-balanced(ng-href='#/run/low')
+      | 비싸면 안 돼요
+    a.button.button-block.button-energized(ng-href='#/run/')
+      | 비싸도 괜찮아요
+    a.button.button-block.button-assertive(ng-href='#/run/luxury')
+      | 비싸야 돼요

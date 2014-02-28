@@ -8,7 +8,10 @@
   "dependencies": {
     "express": "*",
     "jade": "*",
+    "stylus": "*",
     "consolidate": "*",
-    "mysql": "2.0.0-rc1"
+    "mysql": "*",
+    "lodash": "*",
+    "view-helpers": "*"
   }
 }

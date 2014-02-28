@@ -1,0 +1,23 @@
+ion-view(title='store.name')
+  ion-content(has-header='true', padding='true')
+    h2 음식점 정보
+    .card
+      .item
+        .row
+          .col 1인 예상 가격
+          .col ₩{{store.price}}
+        .row(ng-if='store.phoneNumber')
+          .col 전화 번호
+          .col {{store.phoneNumber}}
+        .row(ng-if='store.address')
+          .col {{store.address}}
+    h2(ng-if='reviews.length > 0') 전문가 리뷰
+      .card(ng-repeat='review in reviews')
+        .item.item-divider
+          .row
+            .col
+              {{review.name}}
+            .col
+              {{review.score}} / 100
+        .item
+          {{review.body}}
