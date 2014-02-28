@@ -9,5 +9,6 @@ var app = {
     onDeviceReady: function() {
         document.getElementById('host').contentWindow.app = app;
         app.window = window;
+        app.window.open = window.open;
     }
 };
