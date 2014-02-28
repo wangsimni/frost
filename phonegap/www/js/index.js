@@ -21,7 +21,7 @@ var app = {
             window.location.replace('connection.html');
         } else {
             setTimeout(function() {
-                window.location.replace(app.webAppUrl);
+                window.location.replace('host.html');
             }, app.timeout);
         }
     },
@@ -31,6 +31,5 @@ var app = {
         return networkState;
     },
 
-    webAppUrl: 'http://frost.wangsimni.mintrupt.com/',
     timeout: 2000
 };
