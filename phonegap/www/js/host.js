@@ -1,13 +1,16 @@
 
 var app = {
     initialize: function() {
-    	document.getElementById('host').contentWindow.document.app = app;
         this.bindEvents();
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
+        alert(document.getElementById('host'));
+        alert(document.getElementById('host').contentWindow);
+        alert(document.getElementById('host').contentWindow.document);
+        document.getElementById('host').contentWindow.document.app = app;
     },
     kakao: function() {
       window.open(app.kakaoUrl, '_system');
