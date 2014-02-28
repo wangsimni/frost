@@ -1,6 +1,7 @@
 
 var app = {
     initialize: function() {
+    	document.getElementById('host').contentWindow.document.app = app;
         this.bindEvents();
     },
     bindEvents: function() {
