@@ -8,7 +8,8 @@ var app = {
     },
     onDeviceReady: function() {
         document.getElementById('host').contentWindow.app = app;
-        app.window = window;
-        app.window.open = window.open;
+    },
+    open: function(url, name) {
+        window.open(url, name);
     }
 };
