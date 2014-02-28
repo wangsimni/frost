@@ -7,10 +7,7 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-        alert(document.getElementById('host'));
-        alert(document.getElementById('host').contentWindow);
-        alert(document.getElementById('host').contentWindow.document);
-        document.getElementById('host').contentWindow.document.app = app;
+        document.getElementById('host').contentWindow.app = app;
     },
     
     kakao: function() {
