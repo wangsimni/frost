@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.mintrupt.wangsimni.frost"
-        version   = "0.3.1">
+        version   = "0.3.2">
     <name>Frost</name>
     <description>Frost rocks!</description>
     <author href="http://frost.wangsimni.mintrupt.com/"
