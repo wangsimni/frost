@@ -20,8 +20,8 @@ angular.module('doterra.controllers', [])
 .controller('HomeCtrl', function($scope) {
   var app = window.app;
   $scope.kakao = function() {
-    var kakaoUrl = 'kakaolink://sendurl?msg=Frost&nbsp;최고!&nbsp;Team&nbsp;Wangsimni에서&nbsp;제공하는&nbsp;왕십리&nbsp;음식점&nbsp;선택&nbsp;서비스입니다.%0A%0A안드로이드&nbsp;애플리케이션을&nbsp;다운로드해&nbsp;보세요%3A&url=https://play.google.com/store/apps/details?id=com.mintrupt.wangsimni.frost&appid=com.mintrupt.wangsimni.frost&appname=Frost&appver=0.3.1';
-    app.open(kakaoUrl, '_system');
+    var kakaoUrl = 'kakaolink://sendurl?msg=Frost 최고!\nTeam Wangsimni에서 제공하는 왕십리 음식점 선택 서비스입니다.\n\nAndroid용 애플리케이션을 다운로드해 보세요:&url=https://play.google.com/store/apps/details?id=com.mintrupt.wangsimni.frost&appid=com.mintrupt.wangsimni.frost&appname=Frost&appver=0.3.2';
+    app.open(encodeURI(kakaoUrl), '_system');
   };
   $scope.teamWangsimni = function() {
     app.open('http://wangsimni.github.io', '_system');
