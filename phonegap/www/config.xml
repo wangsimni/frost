@@ -31,7 +31,8 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.vibration" />
-
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    
     <icon src="res/icon.png" />
     
     <access origin="*" />
