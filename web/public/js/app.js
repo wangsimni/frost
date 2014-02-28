@@ -9,7 +9,8 @@ angular.module('frost', ['ionic', 'doterra.services', 'doterra.controllers'])
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'partials/home'
+      templateUrl: 'partials/home',
+      controller: 'HomeCtrl'
     })
     .state('run', {
       url: '/run/:price',
